@@ -57,7 +57,8 @@ class RtspUrlBase(SQLModel):
 
 # Properties to receive on item creation
 class RtspUrlCreate(RtspUrlBase):
-    title: str
+    id: int
+    rtsp_url: str
 
 
 # Properties to receive on item update
